@@ -42,6 +42,7 @@ void main() {
                 ),
                 child:const Text(
                   'Welcome',
+                  
                   style: TextStyle(
                     fontSize: 20.0,
                     color: const Color.fromARGB(255, 255, 255, 255),
@@ -125,8 +126,10 @@ void main() {
                 padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 50.0),
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 7, 15, 125),
-
-
+                  border: Border.all(
+                    color: const Color.fromARGB(255, 141, 141, 141),
+                    width: 2.0,
+                  ),
                 ),
                 child: Image.asset(
                   'assets/images/1.png',
