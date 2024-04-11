@@ -18,7 +18,7 @@ void main() {
         title:const Text(
           "First portfolio exam",
           style: TextStyle(
-            color: Colors.white, // Установите цвет текста в белый
+            color: Colors.white, 
           ),
         ),
       ),
@@ -40,17 +40,18 @@ void main() {
                     width: 2.0,
                   ),
                 ),
-                child:const Text(
-                  'Welcome',
-                  
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    color: const Color.fromARGB(255, 255, 255, 255),
+                child: FittedBox( 
+                  fit: BoxFit.cover,
+                  child: Text(
+                    'Welcome',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: const Color.fromARGB(255, 255, 255, 255),
                   ),
                 ),
               ),
             ),
-          ),
+          ),),
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -134,8 +135,8 @@ void main() {
                 child: Image.asset(
                   'assets/images/1.png',
                   fit: BoxFit.cover,
-                  width: 304, // Устанавливаем ширину изображения
-                  height: 105, // Устанавливаем высоту изображения
+                  width: 304, 
+                  height: 105,
                 ),
               ),
             ),
