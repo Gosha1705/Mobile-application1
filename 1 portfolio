@@ -1,0 +1,144 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+
+
+
+
+
+
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 3, 61, 108),
+        leading: const Icon(Icons.home),
+        centerTitle: true,
+        title:const Text(
+          "First portfolio exam",
+          style: TextStyle(
+            color: Colors.white, // Установите цвет текста в белый
+          ),
+        ),
+      ),
+      backgroundColor: Colors.grey[50],
+      body: Stack(
+        children: [
+          Positioned(
+            top: 20.0,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Container(
+                padding:const EdgeInsets.symmetric(horizontal: 80.0, vertical: 40.0),
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.circular(20.0),
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 2.0,
+                  ),
+                ),
+                child:const Text(
+                  'Welcome',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Color.fromARGB(255, 37, 37, 37),
+                      child: Align(
+                        alignment: Alignment.bottomRight,
+                        child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            'TAMK',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 20),
+                    Expanded(
+                      child: Container(
+                        height: 300,
+                        color: Color.fromARGB(255, 99, 99, 99),
+                        child: Center(
+                          child: Text(
+                            'Flutter!',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 20),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.grey,
+                      child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            'THWS',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Positioned(
+            bottom: 20.0,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 50.0),
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 7, 15, 125),
+
+
+                ),
+                child: Image.asset(
+                  'assets/images/1.png',
+                  fit: BoxFit.cover,
+                  width: 304, // Устанавливаем ширину изображения
+                  height: 105, // Устанавливаем высоту изображения
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  ));
+}
